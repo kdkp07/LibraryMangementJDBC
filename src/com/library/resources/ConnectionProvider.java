@@ -6,8 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ConnectionProvider {
-    private Connection conn;
-    public Connection createConnection(){
+    private static Connection conn;
+    public static Connection createConnection(){
         try{
             //Load the class
             Class.forName("com.mysql.cj.jdbc.Driver");
