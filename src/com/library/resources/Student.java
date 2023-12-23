@@ -1,22 +1,22 @@
-package com.library.resources.com.library.resources;
+package com.library.resources;
 
 public class Student {
     private int sid;
     private String sname;
     private String sphone;
-    private String city;
+    private String scity;
 
     public Student(int sid, String sname, String sphone, String city) {
         this.sid = sid;
         this.sname = sname;
         this.sphone = sphone;
-        this.city = city;
+        this.scity = city;
     }
 
     public Student(String sname, String sphone, String city) {
         this.sname = sname;
         this.sphone = sphone;
-        this.city = city;
+        this.scity = city;
     }
 
     public Student() {
@@ -48,11 +48,11 @@ public class Student {
     }
 
     public String getCity() {
-        return city;
+        return scity;
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.scity = city;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class Student {
                 "sid=" + sid +
                 ", sname='" + sname + '\'' +
                 ", sphone='" + sphone + '\'' +
-                ", city='" + city + '\'' +
+                ", city='" + scity + '\'' +
                 '}';
     }
 }
